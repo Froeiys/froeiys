@@ -18,46 +18,53 @@
         }
         .container {
             background: #1f1b24;
-            padding: 40px;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.8), 0 0 25px rgba(127, 90, 240, 0.25);
             text-align: center;
-            border: 1px solid #7f5af0;
-            max-width: 400px;
+            border: 2px solid #7f5af0;
+            max-width: 480px;
             width: 90%;
         }
         h1 {
             color: #7f5af0;
-            margin-bottom: 10px;
-            font-size: 24px;
+            margin-bottom: 15px;
+            font-size: 34px;
+            text-shadow: 0 0 12px rgba(127, 90, 240, 0.4);
+            letter-spacing: 1px;
         }
         p {
             color: #94a1b2;
-            margin-bottom: 30px;
-            font-size: 14px;
+            margin-bottom: 35px;
+            font-size: 20px;
+            font-weight: 500;
         }
         .btn {
-            background-color: #7f5af0;
+            background: linear-gradient(135deg, #7f5af0, #6246ea);
             color: white;
             border: none;
-            padding: 16px 24px;
-            font-size: 16px;
-            border-radius: 10px;
+            padding: 22px 30px;
+            font-size: 22px;
+            border-radius: 14px;
             cursor: pointer;
             text-decoration: none;
             font-weight: bold;
             display: block;
-            transition: background 0.2s;
+            box-shadow: 0 8px 25px rgba(127, 90, 240, 0.5);
+            transition: all 0.3s ease;
         }
-        .btn:hover {
-            background-color: #6246ea;
+        .btn:hover, .btn:focus {
+            background: linear-gradient(135deg, #6246ea, #7f5af0);
+            transform: scale(1.04);
+            box-shadow: 0 12px 35px rgba(127, 90, 240, 0.8);
+            outline: none;
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>Anizium Portal</h1>
-        <p>Infinity Plan & Proxy Aktif Başlatıcı</p>
+        <p>Tıkla Ve Gör Fıstık</p>
         
         <!-- BURAYA master.py'den çıkan güncel Cloudflare linkini yapıştıracaksın -->
         <a href="https://metric-phys-maui-mood.trycloudflare.com" class="btn" id="launchBtn">🚀 Anizium'u Başlat</a>
